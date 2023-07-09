@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+        --blue:#1a73e8;
+        --light-blue:#509CF1;
+        --dark-blue:#4169E1;
+        --radius:0.25rem;
+        --white:#fff;
+        --light-white:#F9F6EE;
+        --dark-white:#EDEADE;
+        --transparent:transparent;
+        --grey:#eee;
+        --red:#EE4B2B;
+        --dark-red:#D70040;
+        --jet-black:#343434;
+        --light-green:#50C878;
+        --box-shadow:12px 11px 21px -20px rgba(22,18,42,0.91);
+        --full-shadow:2px 2px 36px -12px rgba(0,0,0,0.64);
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.friendList-card-img{
+                object-fit: cover;
+                opacity: 0.9 !important;
+}
+
+.friendlist-icon-add{
+        color:var(--light-green) !important;
+        border:1px solid var(--jet-black) !important;
+        border-radius: 50% !important;
+        width:40px;
+        height:40px;
+        cursor: pointer;
+        background: transparent !important;
+}
+
+.friendlist-icon-remove{
+        color:var(--dark-red) !important;
+        border:1px solid var(--jet-black) !important;
+        border-radius: 50% !important;
+        width:40px;
+        height:40px;
+        cursor: pointer;
+        background: transparent !important;
+}
+
+.flex-1{
+        flex:1;
+}
+
+.flex-4{
+        flex:4;
+}
+
+.flex-2{
+        flex:2;
+}
+
+.profile-adBlock-display{
+        display:none;
+}
+
+.friendlist-img{
+        width:60px;
+        height:60px;
+        object-fit:cover;
+        border-radius: 50%;
+}
+
+.friendlist-icon-undo{
+        border:1px solid var(--jet-black);
+        border-radius: 50%;
+        padding:.5rem;
+        font-size:2.4rem !important;
+        color:var(--dark-red) !important;
+        cursor: pointer;
+}
+
+.width-70{
+        width:80%;
+        margin:auto;
+}
+
+.width-50{
+        width:50%;
+        margin:auto;
+}
+
+.profileBlock-display{
+        flex:3;
+}
+
+.newsFeed-display{
+        flex:6;
+}
+
+.adBlock-display{
+        flex:3;
+}
+
+.padding-around{
+        padding:2rem;
+}
+
+.margin-left-sm{
+        margin-left:10px;
+}
+
+.nunito-family{
+    font-family: 'Nunito', sans-serif;
+}
+
+.nunito-400{
+    font-size: 1.5rem;
+    font-weight:400;
+    font-style: italic;
+}
+
+.nunito-200-sm{
+        font-weight:200;
+        font-style: italic;
+}
+
+.nunito-300-sm{
+        font-weight:300;
+        font-style: italic;
+}
+
+.nunito-300-b{
+        font-weight:300;
+}
+
+.nunito-500{
+        font-size: 1.5rem;
+        font-weight: 500;
+}
+
+.delicious-font{
+        font-family: 'Delicious Handrawn', cursive;
+        font-size:2rem;
+        color:var(--blue);
+}
+
+.border-bottoms{
+        border-bottom: 2px solid var(--jet-black);
+}
+
+.underline-text{
+        text-decoration: underline;
+}
+
+.profileBlock-background , .adBlock-background{
+        background:var(--dark-white);
+        border-radius: .8rem;
+        box-shadow: var(--box-shadow);
+}
+
+.profile-img{
+        width:171px;
+        height:180px;
+        border-radius: 50%;
+        object-fit: cover;
+}
+
+.font-navbar-head{
+    color:var(--dark-blue);
+    font-family: 'Delicious Handrawn', cursive;
+    transform: rotate(-2deg);
+    font-size:2.3rem;
+}
+
+.customized{
+    background:var(--dark-blue) !important;
+    color:#fff !important;
+}
+
+.imageUpload-img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.font-navbar-bigger{
+    font-size: 1.8rem !important;
+    cursor: pointer;
+    color:var(--blue);
+}
+
+.padding-changed{
+        padding:0 !important;
+}
+
+.navbar-background , .sidebar-background , .userPosts-background{
+        background:var(--dark-white) !important;
+        border-radius: var(--radius) !important;
+        box-shadow: var(--box-shadow) !important;
+}
+
+.postBlock-background , .feedsBlock-background , .userSettingBlock-background{
+        background:var(--dark-white) !important;
+        border-radius: var(--radius) !important;
+        box-shadow: var(--full-shadow) !important;
+}
+
+.postBlock-img{
+        width:120px;
+        height:120px;
+        border-radius: 50%;
+        object-fit:cover;
+        box-shadow: var(--box-shadow);
+}
+
+.resize-none{
+        resize: none;
+        border-top:none !important;
+        border-left:none !important;
+        border-right:none !important;
+        border-bottom: 1px solid #222 !important;
+        background:transparent !important;
+        border-radius: 0 !important;
+}
+
+.userSettingDesc{
+        resize: none;
+        border-top:none !important;
+        border-left:none !important;
+        border-right:none !important;
+        border-bottom: 1px solid #222 !important;
+        background:transparent !important;
+        border-radius: 0 !important;
+        height:150px !important;
+}
+
+.resize-none::placeholder{
+        color:#222 !important;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        font-style: italic;
+}
+
+.userSettingNickname , .userSettingPassword{
+        border-top:none !important;
+        border-left:none !important;
+        border-right:none !important;
+        border-bottom: 1px solid #222 !important;
+        background:transparent !important;
+        border-radius: 0 !important;
+}
+
+.padding-top-enhance{
+        padding-top:6.2rem !important;
+        padding-bottom: 1rem !important;
+}
+
+.feedsBlock-img , .userPosts-img{
+        object-fit: cover;
+        height:400px;
+        border-radius: var(--radius);
+        opacity: 0.9;
+        width:100%;
+}
+
+.userProfile-background-img{
+        object-fit: cover;
+        height:600px;
+        border-radius: var(--radius);
+        opacity: 0.9;
+        width:100%;
+}
+
+.position-relative{
+        position:relative;
+}
+
+.userProfile-user-img{
+        position: absolute;
+        bottom:-30px;
+        left:10px;
+        width:160px;
+        height:160px;
+        border-radius: 50%;
+        object-fit: cover;
+        opacity: 0.9;
+        border:1px solid var(--light-green);
+}
+
+.feedsBlock-profile-img , .userPosts-profile-img{
+        width:60px;
+        height:60px;
+        border-radius: 50%;
+        object-fit: cover;
+}
+
+.sidebar-hover{
+        padding-left: 10px !important;
+}
+
+.sidebar-hover:hover{
+        background:var(--light-white);
+        transition: .3s;
+}
+
+.main-background , .userSetting-background , .userProfile-background , .userFriendList-background , .friendListPage-background{
+        background: var(--light-white);
+        min-height:100vh;
+}
+
+.adBlock-icon{
+        font-size:1.8rem !important;
+        color:var(--dark-red) !important;
+}
+
+
+.register-image{
+        width:70px;
+        height:70px;
+        object-fit: cover;
+        border:1px solid #eee;
+        border-radius: 50%;
+}
+
+.login-container , .register-container{
+        height:100vh;
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.login-container-one , .register-container-one{
+        background:var(--blue);
+        color:#fff;
+        height:100vh;
+        font-family: 'Delicious Handrawn', cursive;
+        flex: 1;
+        border-radius: var(--radius);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.font-bigger{
+        font-size:5rem;
+        text-align: center;
+}
+
+.login-container-two , .register-container-two{
+        background:#fff;
+        color:#222;
+        height:100vh;
+        flex: 1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.login-container-box , .register-container-box{
+        width:50%;
+        min-height:20rem;
+}
+
+.register-link , .login-link{
+        color:var(--blue);
+        text-decoration: underline;
+        cursor: pointer;
+}
+
+.display-block{
+        display:none;
+}
+
+.comments-hover{
+        text-decoration: underline;
+}
+
+.text-comment{
+        background: transparent !important;
+        border-radius: 0 !important;
+        border-top:0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        border-bottom: 1px solid #222 !important;
+}
+
+.border-bottom-black{
+        border-bottom: 1px solid #222;
+}
+
+.comment-field-background{
+        border-radius: var(--radius);
+        padding:.8rem;
+        background: var(--light-white);
+}
+
+.friendList-card{
+        width:18rem;
+        box-shadow: var(--box-shadow);
+        background:var(--dark-white) !important;
+}
+
+.friendList-profile-img{
+        width:80px;
+        height:80px;
+        object-fit: cover;
+        border-radius: 50%;
+        position:absolute;
+        top:-90px;
+        left:10px;
+}
+
+.setting-background-img{
+        width:100%;
+        height:450px;
+        object-fit: cover;
+        border-radius: var(--radius);
+        opacity: 0.9;
+}
+
+@keyframes animationRotate {
+        0%{
+                transform: rotateZ(0);
+        }
+        100%{
+                transform: rotateZ(360deg);
+        }
+}
+
+.animation-rotate{
+        animation-name: animationRotate;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+}
+
+@media(max-width:1550px){
+        .width-70{
+                width:95%;
+                margin:auto;
+        }
+}
+
+@media(max-width:1300px){
+    .login-container-box , .register-container-box{
+        width:90%;
+    } 
+    .width-changed{
+        width:100% !important;
+    }
+    .width-70{
+        width:100%;
+        margin:auto;
+    }
+    .width-50{
+        width:80%;
+    }
+    .adBlock-display{
+        display:none;
+    }
+    .profile-adBlock-display{
+        display:block;
+    }
+    .profileBlock-display{
+        flex:3;
+    }
+    .friendlist-icon-undo{
+        font-size: 2.1rem !important;
+    }
+    .friendlist-img{
+        width:50px;
+        height:50px;
+    }
+    .font-size-nunito{
+        font-size:1rem !important;
+    }
+    .delicious-font{
+        font-size: 1.3rem !important;
+    }
+    .postBlock-empty-display , .feedsBlock-empty-display , .userPosts-empty-display{
+        display:none;
+    }
+    .userProfile-background-img{
+        height:600px;
+    }
+    .userProfile-user-img{
+        width:140px;
+        height:140px;
+    }
+}
+
+@media(max-width:768px){
+    .login-container , .register-container{
+        flex-direction: column-reverse;
+        height:200vh;
+   }
+   .login-container-one , .register-container-one{
+        width:100vw;
+        height:100vh;
+   }
+   .login-container-two , .register-container-two{
+        width:100vw;
+        height:100vh;
+   }  
+   .login-container-box , .register-container-box{
+        width:90%;
+   }
+   .profileBlock-display{
+        display:none
+   }
+   .adBlock-display{
+        display:none
+   }
+   .font-navbar-head{
+        font-size: 1.8rem;
+   }
+   .width-50{
+        width:90%;
+   }
+   .userProfile-background-img{
+        height:500px;
+   }
+   .display-none{
+        display:none !important;
+   }
+   .display-block{
+        display:block !important;
+   }
+}
+
+@media(max-width:550px){
+       .login-container , .register-container{
+            flex-direction: column-reverse;
+            height:200vh;
+       }
+       .login-container-one , .register-container-one{
+            width:100vw;
+            height:100vh;
+       }
+       .login-container-two , .register-container-two{
+            width:100vw;
+            height:100vh;
+       }
+       .display-none{
+            display:none !important;
+       }
+       .display-block{
+            display:block !important;
+       }
+       .font-navbar-head{
+            font-size:1.5rem;
+       }
+       .padding-top-enhance{
+                padding:5rem 1rem 1rem 1rem !important;
+       }
+       .postBlock-img{
+                width:90px;
+                height:90px;
+       }
+       .feedsBlock-img , .userPosts-img{
+                height:300px;
+       }
+       .flex-4{
+                flex:2;
+       }
+       .flex-2{
+                flex:4;
+       }
+       .width-50{
+                width:100%;
+       }
+       .userProfile-background-img{
+                height:400px;
+       }
+       .setting-background-img{
+                height:400px;
+       }
+}
